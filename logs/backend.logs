@@ -1,0 +1,275 @@
+E:\intern task\backend>npm run dev
+
+> taskflow@1.0.0 dev
+> nodemon backend/src/server.js
+
+[nodemon] 3.1.11
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,cjs,json
+[nodemon] starting `node backend/src/server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node backend/src/server.js`
+✅ MongoDB Connected: 127.0.0.1
+✅ Database: taskmanager
+✅ Database connected successfully
+✅ Database connected successfully
+🚀 Server running on port 5000
+📚 API docs: http://localhost:5000/api-docs
+🌍 Environment: development
+[nodemon] restarting due to changes...
+[nodemon] starting `node backend/src/server.js`
+✅ MongoDB Connected: 127.0.0.1
+✅ Database: taskmanager
+✅ Database connected successfully
+✅ Database connected successfully
+🚀 Server running on port 5000
+📚 API docs: http://localhost:5000/api-docs
+🌍 Environment: development
+Terminate batch job (Y/N)? y
+
+E:\intern task\backend>npm run dev
+
+> taskflow@1.0.0 dev
+> nodemon backend/src/server.js
+
+[nodemon] 3.1.11
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,cjs,json
+[nodemon] starting `node backend/src/server.js`
+✅ MongoDB Connected: 127.0.0.1
+✅ Database: taskmanager
+✅ Database connected successfully
+✅ Database connected successfully
+🚀 Server running on port 5000
+📚 API docs: http://localhost:5000/api-docs
+🌍 Environment: development
+[nodemon] restarting due to changes...
+[nodemon] starting `node backend/src/server.js`
+✅ MongoDB Connected: 127.0.0.1
+✅ Database: taskmanager
+✅ Database connected successfully
+✅ Database connected successfully
+🚀 Server running on port 5000
+📚 API docs: http://localhost:5000/api-docs
+🌍 Environment: development
+🔍 [2026-02-04T21:17:38.050Z] POST /api/v1/auth/login - IP: ::1 - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36
+📝 [2026-02-04T21:17:38.050Z] Request Body: {
+  "email": "manasgupta24103@gmail.com"
+}
+🔐 [2026-02-04T21:17:38.067Z] USER LOGIN ATTEMPT - IP: ::1
+📧 [2026-02-04T21:17:38.067Z] Login Email: manasgupta24103@gmail.com
+❌ [2026-02-04T21:17:38.067Z] LOGIN FAILED - Invalid password for user: manasgupta24103@gmail.com - IP: ::1
+💥 [2026-02-04T21:17:38.430Z] LOGIN ERROR: Invalid user credentials - IP: ::1
+Error: Error: Invalid user credentials
+    at login (E:\intern task\backend\src\controllers\auth.controller.js:216:23) {
+  statusCode: 401
+}
+📤 [2026-02-04T21:17:38.050Z] Response Status: 401 - Size: 182 bytes
+::1 - - [04/Feb/2026:21:17:38 +0000] "POST /api/v1/auth/login HTTP/1.1" 401 182 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+🔍 [2026-02-04T21:17:45.366Z] POST /api/v1/auth/login - IP: ::1 - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36
+📝 [2026-02-04T21:17:45.366Z] Request Body: {
+  "email": "manasgupta24103@gmail.com"
+}
+🔐 [2026-02-04T21:17:45.369Z] USER LOGIN ATTEMPT - IP: ::1
+📧 [2026-02-04T21:17:45.369Z] Login Email: manasgupta24103@gmail.com
+✅ [2026-02-04T21:17:45.369Z] USER LOGIN SUCCESSFUL
+🆔 [2026-02-04T21:17:45.369Z] User ID: 6983aa82bfdd578715e21cb0
+👤 [2026-02-04T21:17:45.369Z] Username: manas_gupta_vasu
+📧 [2026-02-04T21:17:45.369Z] Email: manasgupta24103@gmail.com
+👔 [2026-02-04T21:17:45.369Z] Role: user
+📅 [2026-02-04T21:17:45.369Z] Login IP: ::1
+🔑 [2026-02-04T21:17:45.369Z] Access Token Generated: eyJhbGciOiJIUzI1NiIs...
+🔄 [2026-02-04T21:17:45.369Z] Refresh Token Generated: eyJhbGciOiJIUzI1NiIs...
+📤 [2026-02-04T21:17:45.366Z] Response Status: 200 - Size: 907 bytes
+::1 - - [04/Feb/2026:21:17:45 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 907 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+🔍 [2026-02-04T21:17:45.851Z] GET /api/v1/tasks/stats - IP: ::1 - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36
+📤 [2026-02-04T21:17:45.851Z] Response Status: 200 - Size: 139 bytes
+::1 - - [04/Feb/2026:21:17:45 +0000] "GET /api/v1/tasks/stats HTTP/1.1" 200 139 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+🔍 [2026-02-04T21:17:45.941Z] GET /api/v1/tasks/stats - IP: ::1 - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36
+📤 [2026-02-04T21:17:45.941Z] Response Status: 200 - Size: 139 bytes
+::1 - - [04/Feb/2026:21:17:45 +0000] "GET /api/v1/tasks/stats HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+🔍 [2026-02-04T21:17:51.297Z] GET /api/v1/tasks? - IP: ::1 - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36
+📋 [2026-02-04T21:17:51.300Z] TASK FETCH ATTEMPT - IP: ::1
+👤 [2026-02-04T21:17:51.300Z] Requesting User: manas_gupta_vasu (user)
+🔍 [2026-02-04T21:17:51.300Z] Query Filters: {}
+🔒 [2026-02-04T21:17:51.300Z] Non-admin user - filtering by user_id: 6983aa82bfdd578715e21cb0
+✅ [2026-02-04T21:17:51.300Z] TASKS FETCHED SUCCESSFULLY
+📊 [2026-02-04T21:17:51.300Z] Total tasks returned: 0
+📤 [2026-02-04T21:17:51.297Z] Response Status: 200 - Size: 67 bytes
+::1 - - [04/Feb/2026:21:17:51 +0000] "GET /api/v1/tasks? HTTP/1.1" 200 67 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+🔍 [2026-02-04T21:17:51.321Z] GET /api/v1/tasks? - IP: ::1 - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36
+📋 [2026-02-04T21:17:51.322Z] TASK FETCH ATTEMPT - IP: ::1
+👤 [2026-02-04T21:17:51.322Z] Requesting User: manas_gupta_vasu (user)
+🔍 [2026-02-04T21:17:51.322Z] Query Filters: {}
+🔒 [2026-02-04T21:17:51.322Z] Non-admin user - filtering by user_id: 6983aa82bfdd578715e21cb0
+✅ [2026-02-04T21:17:51.322Z] TASKS FETCHED SUCCESSFULLY
+📊 [2026-02-04T21:17:51.322Z] Total tasks returned: 0
+📤 [2026-02-04T21:17:51.321Z] Response Status: 200 - Size: 67 bytes
+::1 - - [04/Feb/2026:21:17:51 +0000] "GET /api/v1/tasks? HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+🔍 [2026-02-04T21:18:15.716Z] POST /api/v1/tasks - IP: ::1 - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36
+📝 [2026-02-04T21:18:15.716Z] Request Body: {
+  "title": "learn react ",
+  "description": "from chai aur code",
+  "priority": "medium",
+  "status": "in_progress"
+}
+➕ [2026-02-04T21:18:15.720Z] TASK CREATION ATTEMPT - IP: ::1
+👤 [2026-02-04T21:18:15.720Z] Creating User: manas_gupta_vasu (user)
+📝 [2026-02-04T21:18:15.720Z] Task Data: {
+  "title": "learn react ",
+  "description": "from chai aur code",
+  "priority": "medium",
+  "status": "in_progress"
+}
+✅ [2026-02-04T21:18:15.720Z] TASK CREATED SUCCESSFULLY
+🆔 [2026-02-04T21:18:15.720Z] New Task ID: undefined
+📋 [2026-02-04T21:18:15.720Z] Task Title: undefined
+🎯 [2026-02-04T21:18:15.720Z] Task Status: undefined
+⭐ [2026-02-04T21:18:15.720Z] Task Priority: undefined
+👤 [2026-02-04T21:18:15.720Z] Assigned to User ID: 6983aa82bfdd578715e21cb0
+📤 [2026-02-04T21:18:15.716Z] Response Status: 201 - Size: 357 bytes
+::1 - - [04/Feb/2026:21:18:15 +0000] "POST /api/v1/tasks HTTP/1.1" 201 357 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+🔍 [2026-02-04T21:18:15.812Z] GET /api/v1/tasks? - IP: ::1 - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36
+📋 [2026-02-04T21:18:15.814Z] TASK FETCH ATTEMPT - IP: ::1
+👤 [2026-02-04T21:18:15.814Z] Requesting User: manas_gupta_vasu (user)
+🔍 [2026-02-04T21:18:15.814Z] Query Filters: {}
+🔒 [2026-02-04T21:18:15.814Z] Non-admin user - filtering by user_id: 6983aa82bfdd578715e21cb0
+✅ [2026-02-04T21:18:15.814Z] TASKS FETCHED SUCCESSFULLY
+📊 [2026-02-04T21:18:15.814Z] Total tasks returned: 0
+📤 [2026-02-04T21:18:15.812Z] Response Status: 200 - Size: 362 bytes
+::1 - - [04/Feb/2026:21:18:15 +0000] "GET /api/v1/tasks? HTTP/1.1" 200 362 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+🔍 [2026-02-04T21:18:22.500Z] PUT /api/v1/tasks/6983b7979cae96a2ab70a67d - IP: ::1 - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36
+📝 [2026-02-04T21:18:22.500Z] Request Body: {
+  "title": "learn react",
+  "description": "from chai aur code",
+  "status": "completed",
+  "priority": "medium"
+}
+📤 [2026-02-04T21:18:22.500Z] Response Status: 200 - Size: 355 bytes
+::1 - - [04/Feb/2026:21:18:22 +0000] "PUT /api/v1/tasks/6983b7979cae96a2ab70a67d HTTP/1.1" 200 355 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+🔍 [2026-02-04T21:18:22.593Z] GET /api/v1/tasks? - IP: ::1 - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36
+📋 [2026-02-04T21:18:22.598Z] TASK FETCH ATTEMPT - IP: ::1
+👤 [2026-02-04T21:18:22.598Z] Requesting User: manas_gupta_vasu (user)
+🔍 [2026-02-04T21:18:22.598Z] Query Filters: {}
+🔒 [2026-02-04T21:18:22.598Z] Non-admin user - filtering by user_id: 6983aa82bfdd578715e21cb0
+✅ [2026-02-04T21:18:22.598Z] TASKS FETCHED SUCCESSFULLY
+📊 [2026-02-04T21:18:22.598Z] Total tasks returned: 0
+📤 [2026-02-04T21:18:22.593Z] Response Status: 200 - Size: 360 bytes
+::1 - - [04/Feb/2026:21:18:22 +0000] "GET /api/v1/tasks? HTTP/1.1" 200 360 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+🔍 [2026-02-04T21:18:26.017Z] DELETE /api/v1/tasks/6983b7979cae96a2ab70a67d - IP: ::1 - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36
+📤 [2026-02-04T21:18:26.017Z] Response Status: 200 - Size: 95 bytes
+::1 - - [04/Feb/2026:21:18:26 +0000] "DELETE /api/v1/tasks/6983b7979cae96a2ab70a67d HTTP/1.1" 200 95 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+🔍 [2026-02-04T21:18:26.059Z] GET /api/v1/tasks? - IP: ::1 - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36
+📋 [2026-02-04T21:18:26.061Z] TASK FETCH ATTEMPT - IP: ::1
+👤 [2026-02-04T21:18:26.061Z] Requesting User: manas_gupta_vasu (user)
+🔍 [2026-02-04T21:18:26.061Z] Query Filters: {}
+🔒 [2026-02-04T21:18:26.061Z] Non-admin user - filtering by user_id: 6983aa82bfdd578715e21cb0
+✅ [2026-02-04T21:18:26.061Z] TASKS FETCHED SUCCESSFULLY
+📊 [2026-02-04T21:18:26.061Z] Total tasks returned: 0
+📤 [2026-02-04T21:18:26.059Z] Response Status: 200 - Size: 67 bytes
+::1 - - [04/Feb/2026:21:18:26 +0000] "GET /api/v1/tasks? HTTP/1.1" 200 67 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+🔍 [2026-02-04T21:18:30.934Z] POST /api/v1/auth/logout - IP: ::1 - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36
+📝 [2026-02-04T21:18:30.934Z] Request Body: {}
+🚪 [2026-02-04T21:18:30.937Z] USER LOGOUT ATTEMPT - IP: ::1
+🆔 [2026-02-04T21:18:30.937Z] Logout User ID: 6983aa82bfdd578715e21cb0
+👤 [2026-02-04T21:18:30.937Z] Logout Username: manas_gupta_vasu
+👔 [2026-02-04T21:18:30.937Z] Logout User Role: user
+✅ [2026-02-04T21:18:30.937Z] USER LOGOUT SUCCESSFUL
+🧹 [2026-02-04T21:18:30.937Z] Refresh token cleared for user: manas_gupta_vasu
+🍪 [2026-02-04T21:18:30.937Z] Cookies cleared - IP: ::1
+📤 [2026-02-04T21:18:30.934Z] Response Status: 200 - Size: 67 bytes
+::1 - - [04/Feb/2026:21:18:30 +0000] "POST /api/v1/auth/logout HTTP/1.1" 200 67 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+🔍 [2026-02-04T21:19:01.219Z] POST /api/v1/auth/login - IP: ::1 - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36
+📝 [2026-02-04T21:19:01.219Z] Request Body: {
+  "email": "mridulgupta12345@gmail.com"
+}
+🔐 [2026-02-04T21:19:01.222Z] USER LOGIN ATTEMPT - IP: ::1
+📧 [2026-02-04T21:19:01.222Z] Login Email: mridulgupta12345@gmail.com
+✅ [2026-02-04T21:19:01.222Z] USER LOGIN SUCCESSFUL
+🆔 [2026-02-04T21:19:01.222Z] User ID: 6983aa63bfdd578715e21ca2
+👤 [2026-02-04T21:19:01.222Z] Username: smaaaaa
+📧 [2026-02-04T21:19:01.222Z] Email: mridulgupta12345@gmail.com
+👔 [2026-02-04T21:19:01.222Z] Role: admin
+📅 [2026-02-04T21:19:01.222Z] Login IP: ::1
+🔑 [2026-02-04T21:19:01.222Z] Access Token Generated: eyJhbGciOiJIUzI1NiIs...
+🔄 [2026-02-04T21:19:01.222Z] Refresh Token Generated: eyJhbGciOiJIUzI1NiIs...
+📤 [2026-02-04T21:19:01.219Z] Response Status: 200 - Size: 895 bytes
+::1 - - [04/Feb/2026:21:19:01 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 895 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+🔍 [2026-02-04T21:19:01.537Z] GET /api/v1/users? - IP: ::1 - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36
+👥 [2026-02-04T21:19:01.541Z] ADMIN USER LIST REQUEST - IP: ::1
+👑 [2026-02-04T21:19:01.541Z] Requesting Admin: smaaaaa (admin)
+📊 [2026-02-04T21:19:01.541Z] Pagination - Limit: 20, Offset: 0
+✅ [2026-02-04T21:19:01.541Z] USERS LISTED SUCCESSFULLY
+👥 [2026-02-04T21:19:01.541Z] Total users returned: 2
+📤 [2026-02-04T21:19:01.537Z] Response Status: 200 - Size: 883 bytes
+::1 - - [04/Feb/2026:21:19:01 +0000] "GET /api/v1/users? HTTP/1.1" 200 883 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+🔍 [2026-02-04T21:19:01.576Z] GET /api/v1/users? - IP: ::1 - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36
+👥 [2026-02-04T21:19:01.578Z] ADMIN USER LIST REQUEST - IP: ::1
+👑 [2026-02-04T21:19:01.578Z] Requesting Admin: smaaaaa (admin)
+📊 [2026-02-04T21:19:01.578Z] Pagination - Limit: 20, Offset: 0
+✅ [2026-02-04T21:19:01.578Z] USERS LISTED SUCCESSFULLY
+👥 [2026-02-04T21:19:01.578Z] Total users returned: 2
+📤 [2026-02-04T21:19:01.576Z] Response Status: 200 - Size: 883 bytes
+::1 - - [04/Feb/2026:21:19:01 +0000] "GET /api/v1/users? HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+🔍 [2026-02-04T21:19:07.842Z] PUT /api/v1/users/6983aa82bfdd578715e21cb0/role - IP: ::1 - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36
+📝 [2026-02-04T21:19:07.842Z] Request Body: {
+  "role": "admin"
+}
+📤 [2026-02-04T21:19:07.842Z] Response Status: 200 - Size: 383 bytes
+::1 - - [04/Feb/2026:21:19:07 +0000] "PUT /api/v1/users/6983aa82bfdd578715e21cb0/role HTTP/1.1" 200 383 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+🔍 [2026-02-04T21:19:07.862Z] GET /api/v1/users? - IP: ::1 - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36
+👥 [2026-02-04T21:19:07.864Z] ADMIN USER LIST REQUEST - IP: ::1
+👑 [2026-02-04T21:19:07.864Z] Requesting Admin: smaaaaa (admin)
+📊 [2026-02-04T21:19:07.864Z] Pagination - Limit: 20, Offset: 0
+✅ [2026-02-04T21:19:07.864Z] USERS LISTED SUCCESSFULLY
+👥 [2026-02-04T21:19:07.864Z] Total users returned: 2
+📤 [2026-02-04T21:19:07.862Z] Response Status: 200 - Size: 884 bytes
+::1 - - [04/Feb/2026:21:19:07 +0000] "GET /api/v1/users? HTTP/1.1" 200 884 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+🔍 [2026-02-04T21:19:10.121Z] PUT /api/v1/users/6983aa82bfdd578715e21cb0/role - IP: ::1 - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36
+📝 [2026-02-04T21:19:10.121Z] Request Body: {
+  "role": "user"
+}
+📤 [2026-02-04T21:19:10.121Z] Response Status: 200 - Size: 382 bytes
+::1 - - [04/Feb/2026:21:19:10 +0000] "PUT /api/v1/users/6983aa82bfdd578715e21cb0/role HTTP/1.1" 200 382 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+🔍 [2026-02-04T21:19:10.145Z] GET /api/v1/users? - IP: ::1 - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36
+👥 [2026-02-04T21:19:10.147Z] ADMIN USER LIST REQUEST - IP: ::1
+👑 [2026-02-04T21:19:10.147Z] Requesting Admin: smaaaaa (admin)
+📊 [2026-02-04T21:19:10.147Z] Pagination - Limit: 20, Offset: 0
+✅ [2026-02-04T21:19:10.147Z] USERS LISTED SUCCESSFULLY
+👥 [2026-02-04T21:19:10.147Z] Total users returned: 2
+📤 [2026-02-04T21:19:10.145Z] Response Status: 200 - Size: 883 bytes
+::1 - - [04/Feb/2026:21:19:10 +0000] "GET /api/v1/users? HTTP/1.1" 200 883 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+🔍 [2026-02-04T21:19:17.607Z] DELETE /api/v1/users/6983aa82bfdd578715e21cb0 - IP: ::1 - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36
+🗑️ [2026-02-04T21:19:17.609Z] ADMIN USER DELETION ATTEMPT - IP: ::1
+👑 [2026-02-04T21:19:17.609Z] Deleting Admin: smaaaaa (admin)
+🎯 [2026-02-04T21:19:17.609Z] Target User ID: 6983aa82bfdd578715e21cb0
+✅ [2026-02-04T21:19:17.609Z] USER DELETED SUCCESSFULLY
+🆔 [2026-02-04T21:19:17.609Z] Deleted User ID: 6983aa82bfdd578715e21cb0
+👤 [2026-02-04T21:19:17.609Z] Deleted Username: manas_gupta_vasu
+📧 [2026-02-04T21:19:17.609Z] Deleted Email: manasgupta24103@gmail.com
+👔 [2026-02-04T21:19:17.609Z] Deleted Role: user
+📅 [2026-02-04T21:19:17.609Z] Account Created: Thu Feb 05 2026 01:52:26 GMT+0530 (India Standard Time)
+🗑️ [2026-02-04T21:19:17.609Z] Deletion IP: ::1
+📤 [2026-02-04T21:19:17.607Z] Response Status: 200 - Size: 95 bytes
+::1 - - [04/Feb/2026:21:19:17 +0000] "DELETE /api/v1/users/6983aa82bfdd578715e21cb0 HTTP/1.1" 200 95 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+🔍 [2026-02-04T21:19:17.638Z] GET /api/v1/users? - IP: ::1 - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36
+👥 [2026-02-04T21:19:17.639Z] ADMIN USER LIST REQUEST - IP: ::1
+👑 [2026-02-04T21:19:17.639Z] Requesting Admin: smaaaaa (admin)
+📊 [2026-02-04T21:19:17.639Z] Pagination - Limit: 20, Offset: 0
+✅ [2026-02-04T21:19:17.639Z] USERS LISTED SUCCESSFULLY
+👥 [2026-02-04T21:19:17.639Z] Total users returned: 1
+📤 [2026-02-04T21:19:17.638Z] Response Status: 200 - Size: 567 bytes
+::1 - - [04/Feb/2026:21:19:17 +0000] "GET /api/v1/users? HTTP/1.1" 200 567 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+🔍 [2026-02-04T21:19:22.711Z] POST /api/v1/auth/logout - IP: ::1 - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36
+📝 [2026-02-04T21:19:22.711Z] Request Body: {}
+🚪 [2026-02-04T21:19:22.712Z] USER LOGOUT ATTEMPT - IP: ::1
+🆔 [2026-02-04T21:19:22.712Z] Logout User ID: 6983aa63bfdd578715e21ca2
+👤 [2026-02-04T21:19:22.712Z] Logout Username: smaaaaa
+👔 [2026-02-04T21:19:22.712Z] Logout User Role: admin
+✅ [2026-02-04T21:19:22.712Z] USER LOGOUT SUCCESSFUL
+🧹 [2026-02-04T21:19:22.712Z] Refresh token cleared for user: smaaaaa
+🍪 [2026-02-04T21:19:22.712Z] Cookies cleared - IP: ::1
+📤 [2026-02-04T21:19:22.711Z] Response Status: 200 - Size: 67 bytes
+::1 - - [04/Feb/2026:21:19:22 +0000] "POST /api/v1/auth/logout HTTP/1.1" 200 67 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
