@@ -1,5 +1,6 @@
 # Copy this content to your .env file in the frontend directory
 
+# For Production (Vercel Deployment)
 VITE_API_URL=https://task-manager-r6gx.onrender.com/api/v1
 VITE_APP_TITLE=TaskFlow
 VITE_NODE_ENV=production
@@ -9,4 +10,16 @@ VITE_NODE_ENV=production
 # 2. Create a new file named ".env" in the frontend directory
 # 3. Paste the content into the .env file
 # 4. Save the file
-# 5. Redeploy your frontend to Vercel
+# 5. Commit and push: git add . && git commit -m "fix api url" && git push
+# 6. Vercel will auto-redeploy
+
+# Alternative: Set in Vercel Dashboard
+# Go to Project Settings → Environment Variables
+# Add: VITE_API_URL = https://task-manager-r6gx.onrender.com/api/v1
+
+# Backend Routes Structure:
+# /api/v1/auth/register
+# /api/v1/auth/login
+# /api/v1/auth/logout
+# /api/v1/tasks
+# /api/v1/users

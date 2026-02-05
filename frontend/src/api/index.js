@@ -1,9 +1,28 @@
 import axios from 'axios';
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api/v1';
+// Try multiple ways to get the API URL
+const getApiUrl = () => {
+  // Check if we're in production and use the deployed backend URL
+  if (import.meta.env.PROD) {
+    return 'https://task-manager-r6gx.onrender.com/api/v1';
+  }
+  
+  // Use environment variable if available
+  if (import.meta.env.VITE_API_URL) {
+    return import.meta.env.VITE_API_URL;
+  }
+  
+  // Fallback to localhost for development
+  return 'http://localhost:5000/api/v1';
+};
+
+const API_BASE_URL = getApiUrl();
 
 // Debug: Log the API URL being used
-console.log('🔗 API Base URL:', API_BASE_URL);
+console.log('🔗 Environment:', import.meta.env.MODE);
+console.log('🔗 Production:', import.meta.env.PROD);
+console.log('🔗 VITE_API_URL:', import.meta.env.VITE_API_URL);
+console.log('🔗 Final API Base URL:', API_BASE_URL);
 
 // Create axios instance with default config
 const api = axios.create({
@@ -18,7 +37,8 @@ const api = axios.create({
 // Request interceptor for debugging
 api.interceptors.request.use(
   (config) => {
-    console.log('🚀 API Request:', config.method?.toUpperCase(), config.baseURL + config.url);
+    const fullUrl = config.baseURL + config.url;
+    console.log('🚀 API Request:', config.method?.toUpperCase(), fullUrl);
     return config;
   },
   (error) => {
@@ -34,6 +54,7 @@ api.interceptors.response.use(
   },
   (error) => {
     console.log('❌ API Error:', error.response?.status, error.config?.url);
+    console.log('❌ Error Details:', error.response?.data);
     if (error.response?.status === 401) {
       localStorage.removeItem('user');
       window.location.href = '/login';
