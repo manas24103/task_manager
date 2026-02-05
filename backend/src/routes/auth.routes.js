@@ -23,6 +23,9 @@ router.post('/refresh', AuthController.refreshToken);
 // Logout user
 router.post('/logout', authenticateToken, AuthController.logout);
 
+// Validate user authentication
+router.get('/validate', authenticateToken, AuthController.validateUser);
+
 // Change password
 router.post('/change-password', authenticateToken, AuthController.changePassword);
 

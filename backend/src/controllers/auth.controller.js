@@ -513,18 +513,6 @@ class AuthController {
       const { email } = req.body;
 
       const user = await User.findOne({ email });
-      if (!user) {
-        const error = new Error('User not found');
-        error.statusCode = 404;
-        throw error;
-      }
-      
-      const resetToken = crypto.randomBytes(32).toString('hex');
-
-      const hashedToken = crypto
-        .createHash('sha256')
-        .update(resetToken)
-        .digest('hex');
 
       user.passwordResetToken = hashedToken;
       user.passwordResetExpires = Date.now() + 10 * 60 * 1000; // 10 minutes

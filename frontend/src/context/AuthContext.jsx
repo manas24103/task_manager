@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { authAPI } from '../api/auth.api';
+import api from '../api/index';
 
 const AuthContext = createContext();
 
@@ -16,12 +17,42 @@ export const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const userData = localStorage.getItem('user');
+    const validateUser = async () => {
+      try {
+        const userData = localStorage.getItem('user');
+        
+        if (userData) {
+          try {
+            const parsedUser = JSON.parse(userData);
+            console.log('🔍 [AuthContext] Found user in localStorage:', parsedUser);
+            
+            // Set user immediately to prevent white screen
+            setUser(parsedUser);
+            
+            // Validate user by making a test API call
+            try {
+              const response = await api.get('/auth/validate');
+              console.log('✅ [AuthContext] User validation successful');
+            } catch (error) {
+              console.log('❌ [AuthContext] User validation failed:', error.response?.status);
+              // User is not authenticated, clear localStorage
+              localStorage.removeItem('user');
+              setUser(null);
+            }
+          } catch (parseError) {
+            console.log('❌ [AuthContext] Failed to parse user data:', parseError);
+            localStorage.removeItem('user');
+            setUser(null);
+          }
+        }
+      } catch (error) {
+        console.log('❌ [AuthContext] Error during user validation:', error);
+        setUser(null);
+      }
+      setLoading(false);
+    };
     
-    if (userData) {
-      setUser(JSON.parse(userData));
-    }
-    setLoading(false);
+    validateUser();
   }, []);
 
   const login = async (credentials) => {
