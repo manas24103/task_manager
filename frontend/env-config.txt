@@ -1,0 +1,12 @@
+# Copy this content to your .env file in the frontend directory
+
+VITE_API_URL=https://task-manager-r6gx.onrender.com/api/v1
+VITE_APP_TITLE=TaskFlow
+VITE_NODE_ENV=production
+
+# Instructions:
+# 1. Copy this content
+# 2. Create a new file named ".env" in the frontend directory
+# 3. Paste the content into the .env file
+# 4. Save the file
+# 5. Redeploy your frontend to Vercel
